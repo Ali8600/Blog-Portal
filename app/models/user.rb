@@ -9,3 +9,4 @@ class User < ApplicationRecord
   # set default role to user  if not set
 
 end
+

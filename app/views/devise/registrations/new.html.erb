@@ -8,9 +8,12 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
   <div class="field">
-    <%= f.label :Role %><br />
-    <%= f.select :Role, User.Roles.keys.map { |type| [type.titleize, type] }, {} %>
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name, autofocus: true, autocomplete: "Name" %>
   </div>
+  <div class="field">
+    <%= f.label :Role %><br />
+    <%= f.select :Role, User.Roles.keys.map { |type| [type.titleize, type] }, {} %>  </div>
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
